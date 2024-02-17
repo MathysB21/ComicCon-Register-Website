@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: url(images/registration-bg.jpg) no-repeat;
+  background-size: cover;
+  z-index: 80;
+}
+
+.container {
+  width: 1000px;
+  height: 600px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(images/registration-container.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  height: 100%;
+  width: 42%;
+  padding: 60px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h1 {
+  font-size:42px;
+  margin-bottom: 100px;
+}
+
+.right {
+  height: 100%;
+  background-color:white;
+  width: 58%;
+  z-index: 80;
+}
+
+.header {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 50px 60px 5px 60px;
+}
+
+.content {
+  overflow: auto;
+  width: 100%;
+  height: 515px;
+}
+
+form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.form-group {
+  margin: 10px 0 30px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow ease-in-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+select:active {
+  outline: 2px solid lightgray;
+}
+
+select:hover {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+option {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  border: 2px solid #333;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #333;
+  border-color: #333;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow ease-in-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+input:hover {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background: white;
+  border: 4px solid #0A0336;
+  border-radius: 8px;
+  color: #0A0336;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all ease-in-out .5s;
+}
+
+button:hover {
+  background: #0A0336;
+  color: white;
+  border: 4px solid white;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 112, 112);
+}

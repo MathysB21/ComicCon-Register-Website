@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register-styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Guest Registration Form</h1>
+            <h2>Please fill in your details to be registered for the Comicon2023</h2>
+        </div>
+        <div class="right">
+            <div class="header">
+                <h2>Register</h2>
+            </div>
+            <div class="content">
+                <form action="register.php" method="post">
+                    <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option disabled selected value="">Please select an option</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non-Binary</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event_location">Event Location</label>
+                        <input type="text" id="event_location" name="event_location">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event_date">Event Date</label>
+                        <input type="date" id="event_date" name="event_date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comic_genre">Preferred Comic Genre</label>
+                        <input type="text" id="comic_genre" name="comic_genre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="favourite_character">Favorite Comic Book Character</label>
+                        <input type="text" id="favourite_character" name="favourite_character">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comic_interest">Level of Interest in Comics</label>
+                        <select id="comic_interest" name="comic_interest">
+                            <option disabled selected value="">Please select an option</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cosplay_preference">Cosplay Preferences</label>
+                        <input type="text" id="cosplay_preference" name="cosplay_preference">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cosplay_experience">Cosplay Experience Level</label>
+                        <select id="cosplay_experience" name="cosplay_experience">
+                            <option disabled selected value="">Please select an option</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cosplay_awards">Previous Cosplay Awards</label>
+                        <input type="text" id="cosplay_awards" name="cosplay_awards">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagram_handle">Instagram Handle</label>
+                        <input type="text" id="instagram_handle" name="instagram_handle">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred_guest">Preferred Guest</label>
+                        <select id="preferred_guest" name="preferred_guest">
+                            <option disabled selected value="">Please select an option</option>
+                            <option value="stan_lee">Stan Lee</option>
+                            <option value="neil_gaiman">Neil Gaiman</option>
+                            <option value="g_r_r_martin">G.R.R. Martin</option>
+                            <option value="j_k_rowling">J.K. Rowling</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Subscribe to Newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" name="register">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

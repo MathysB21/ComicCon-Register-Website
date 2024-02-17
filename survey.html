@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comicon2023 Guest Selection Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="surveystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="survey-container">
+        <div class="header">
+            <h1>Comicon2023<br>Survey</h1>
+            <p>Help us create a personalized experience for you!</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#5b59b3" />
+                    <stop offset="100%" stop-color="#7977f2" />
+                </linearGradient>
+            </defs>
+            <path class="comic-purple"
+                d="M0,128L24,149.3C48,171,96,213,144,208C192,203,240,149,288,154.7C336,160,384,224,432,229.3C480,235,528,181,576,186.7C624,192,672,256,720,256C768,256,816,192,864,144C912,96,960,64,1008,90.7C1056,117,1104,203,1152,218.7C1200,235,1248,181,1296,160C1344,139,1392,149,1416,154.7L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+            </path>
+        </svg>
+        <div class="content">
+            <h3>
+                Please take a few minutes to complete the survey.
+            </h3>
+            <h4>
+                Instructions:
+            </h4>
+            <ul>
+                <li>Please try to fill in all the questions.</li>
+                <li>Estimated completion time: 5-10 minutes.</li>
+            </ul>
+
+            <form action="" method="post">
+                <label for="preferred_guest">Preferred Guest</label>
+                <select name="preferred_guest" id="preferred_guest">
+                    <option disabled selected value="">Please select an option</option>
+                    <option value="stan_lee">Stan Lee</option>
+                    <option value="neil_gaiman">Neil Gaiman</option>
+                    <option value="g_r_r_martin">G.R.R. Martin</option>
+                    <option value="j_k_rowling">J.K. Rowling</option>
+                    <option value="w_disney">W. Disney</option>
+                </select>
+
+                <label for="preferred_theme">Preferred Theme</label>
+                <select name="preferred_theme" id="preferred_theme">
+                    <option disabled selected value="">Please select an option</option>
+                    <option value="marvel">Marvel</option>
+                    <option value="dc">DC</option>
+                    <option value="disney">Disney</option>
+                    <option value="harry_potter">Harry Potter</option>
+                    <option value="star_wars">Star Wars</option>
+                </select>
+
+                <label for="preferred_location">Preferred Location</label>
+                <select name="preferred_location" id="preferred_location">
+                    <option disabled selected value="">Please select an option</option>
+                    <option value="johannesburg">Johannesburg</option>
+                    <option value="cape_town">Cape Town</option>
+                    <option value="pretoria">Pretoria</option>
+                    <option value="durban">Durban</option>
+                </select>
+
+                <label for="hear-about">Where did you hear about the Comic Con?</label>
+                <select id="hear-about" name="hear-about">
+                    <option disabled selected value="">Please select an option</option>
+                    <option value="social-media">Social media</option>
+                    <option value="friends">Friends</option>
+                    <option value="advertising">Advertising</option>
+                    <option value="website">Website</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="likelihood">How likely are you to attend next year's Comic Con?</label>
+                <input type="range" id="likelihood" name="likelihood" min="0" max="100" step="10" value="50">
+
+                <label for="satisfaction">How satisfied were you with this year's Comic Con?</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" step="10" value="50">
+
+                <label for="concerns">Did you encounter any issues or concerns during the event? If 'Yes', please
+                    describe the issue below.</label>
+                <label class="radio" for="concerns-yes">Yes</label>
+                <input class="radio" type="radio" id="concerns-yes" name="concerns" value="yes">
+                <label class="radio" for="concerns-no">No</label>
+                <input class="radio" type="radio" id="concerns-no" name="concerns" value="no" checked>
+                <br>
+                <textarea id="concerns-description" name="concerns-description" rows="4" cols="50"
+                    placeholder="Please describe the issue here..."></textarea>
+
+                <button type="submit" name="register">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
